@@ -1,0 +1,13 @@
+package java_0624;
+
+public class dfs {
+
+	public static void main(String[] args) {
+		rec();
+	}
+
+	private static void rec() {
+	
+	}
+
+}
