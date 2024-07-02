@@ -77,6 +77,30 @@
     }
     ```
 ### 7. 1차원, 2차원 배열
+퀵 정렬 기반의 퀵 정렬보다 더 빠른 정렬
+
+#### 배열 정렬
+>    - Comparable: 객체 자신의 정렬방식 정의
+>    - Comparator: 정렬기 (매개변수 2개의 정렬 방법을 정해줌)
+
+```java
+int[] arr = new int[] {1,2,3,4};
+Arrays.toString(arr); - 디버깅용, 현재값 확인 가능!
+Arrays.sort(arr, Collections.reverseOrder()); // 내림차순
+Arrays.fill(arr, 7); // 임의 값으로 모두 채우기
+```
+
+### Comparable 인터페이스
+```java
+public class Player implements Comparable <Player> {
+    @Override
+    pubilc int compareTo(Player o) {
+        return this.getScore() - o.getScore(); // 나 - 매개변수
+    }
+}
+Collections.sort(players);
+```
+
 **1차원** 
 - int[] arr; // 변수 선언(변수만 생성, 배열 객체는 안만듦)
 - int arr[]; // 변수 선언 
